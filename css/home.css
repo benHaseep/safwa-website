@@ -1,0 +1,215 @@
+
+main {
+  background: linear-gradient(to bottom,  var(--safwa-bg-color), rgba(13,27,42,0.85)),url('') center/cover no-repeat;
+}
+.hero {
+  color: var(--text-light);
+  padding: 0 1.5rem 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  margin: 0 auto;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--safwa-main-color);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.hero-mission {
+  margin-bottom: 2.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+}
+
+.hero-mission h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: var(--safwa-main-color);
+}
+
+.hero-mission p, 
+.hero-mission ul {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.hero-mission ul {
+  list-style: none;
+  display: inline-block;
+  text-align: right;
+}
+
+.hero-mission ul li {
+  position: relative;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: var(--safwa-main-color);
+  color: var(--text-light);
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(244, 180, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #d49a00;
+  box-shadow: 0 10px 25px rgba(244, 180, 0, 0.6);
+  transform: translateY(-3px);
+}
+
+
+.services {
+  padding: 3rem 1.5rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--safwa-main-color);
+  border: 1px solid var(--safwa-main-color);
+  display: inline-block;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  min-height: 270px;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  color: #191633;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.service-link {
+  display: inline-block;
+  background: var(--safwa-main-color);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: 25px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.service-link:hover {
+  background: #d49a00;
+}
+
+.final-cta {
+  /* background: linear-gradient(to right, #191633, #0d1b2a); */
+  background-color: var(--safwa-bg-color);
+  color: var(--safwa-text-light);
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.final-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.final-cta-title {
+  font-size: 2rem;
+  color: var(--safwa-main-color);
+  margin-bottom: 1rem;
+}
+
+.final-cta-text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+.final-cta .cta-btn:hover {
+  background: #d49a00;
+  box-shadow: 0 12px 28px rgba(244, 180, 0, 0.6);
+  transform: translateY(-3px);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 1rem 2rem 3rem;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 4rem;
+  }
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+  .hero-mission {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+  }
+  .section-title {
+    font-size: 3rem;
+  }
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .final-cta-title {
+    font-size: 3rem;
+  }
+  .final-cta-text {
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

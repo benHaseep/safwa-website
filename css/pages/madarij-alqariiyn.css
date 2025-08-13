@@ -1,0 +1,237 @@
+
+header {
+  background-color: var(--madarij-qariiyn-bg-color);
+
+  .logo {
+    background-image: url(/images/madarij-alqariiyn-logo.png);
+    width: 250px;
+    height: 80px;
+  }
+  .main-nav li a, .menu-toggle {
+    color: var(--text-light);
+    color: var(--madarij-qariiyn-main-color)
+  }
+}
+
+main {
+  background: linear-gradient(to bottom,  var(--madarij-qariiyn-bg-color), var(--madarij-qariiyn-main-color)),url('') center/cover no-repeat;
+}
+
+.hero {
+  color: var(--text-dark);
+  padding: 2rem 1.1rem;
+  text-align: justify;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-out;
+  margin-bottom: 2.5rem;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.hero h1, h2 {
+  color: var(--safwa-main-color);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-content h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.hero-content p, 
+.hero-content ul {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.hero-content ul {
+  padding-right: 0.5rem;
+  list-style: none;
+  text-align: right;
+}
+
+.hero-content ul li {
+  position: relative;
+}
+
+.cta-btn {
+  display: block;
+  max-width: 270px;
+  background: var(--safwa-main-color);
+  color: var(--text-light);
+  padding: 1rem 2rem;
+  margin: 2rem auto 1rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(244, 180, 0, 0.4);
+  text-align: center;
+}
+
+.cta-btn:hover {
+  background: #d49a00;
+  box-shadow: 0 10px 25px rgba(244, 180, 0, 0.6);
+  transform: translateY(-3px);
+}
+
+
+.tracks {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--safwa-main-color);
+  margin-bottom: 2rem;
+  border: 1px solid var(--madarij-qariiyn-main-color);
+  display: inline-block;
+  padding: 0 2rem;
+  border-radius: 5px;
+}
+
+.tracks-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.track-card {
+  background: #847c4c;
+  color: var(--text-dark);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  min-height: 320px;
+  position: relative;
+}
+
+.track-card img {
+  max-width: 100%;
+  height: 100px;
+  margin: 0;
+}
+
+.track-card h3 {
+  font-size: 1.5rem;
+  color: var(--madarij-qariiyn-bg-color);
+  margin-bottom: 0.5rem;
+}
+
+.track-card p {
+  font-size: 1.2rem;
+}
+
+.track-link {
+  display: inline-block;
+  background: var(--safwa-main-color);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  position: absolute;
+  bottom: 25px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.track-link:hover {
+  background: #d49a00;
+}
+
+.contact-section {
+  color: var(--text-dark);
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.contact-section-title {
+  font-size: 1.5rem;
+  border: 1px solid var(--madarij-qariiyn-main-color);
+  display: inline-block;
+  padding: 0 2rem;
+  border-radius: 5px;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin: 2rem auto 1rem;
+  line-height: 1.6;
+}
+
+.contact-section .cta-btn {
+  margin: auto;
+  max-width: 210px;
+  font-size: 1rem;
+}
+.contact-section .cta-btn:hover {
+  background: #d49a00;
+  box-shadow: 0 12px 28px rgba(244, 180, 0, 0.6);
+  transform: translateY(-3px);
+}
+
+@media (min-width: 768px) {
+  header .main-nav li a {
+    color: var(--text-dark);
+  }
+  .hero {
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 4rem;
+  }
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    padding: 1rem 3.5rem 2rem;
+  }
+  .hero-content ul {
+    display: inline-block;
+    margin: auto;
+  }
+  .tracks-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tracks .section-title {
+    font-size: 2.5rem;
+  }
+  .contact-section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

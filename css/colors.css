@@ -1,0 +1,20 @@
+:root {
+  --safwa-main-color: #99680c;
+  --safwa-bg-color: #191633;
+  --text-light: #e0e0e0;
+  --text-dark: #040205;
+  --madarij-adab-bg-color1: #282947;
+  --madarij-adab-bg-color2: #2f594f;
+  --madarij-qariiyn-main-color: #a0986a;
+  --madarij-qariiyn-bg-color: #e8e3cb;
+  --merqah-main-color: #8cd5de;
+  --merqah-bg-color1: #28292d;
+  --merqah-bg-color2: #3d4558;
+  --jamhara-main-color: #c3a476;
+  --jamhara-bg-color1: #3e2f1c;
+  --jamhara-bg-color2: #8d7046;
+  --oroog-main-color: #b69b90;
+  --oroog-bg-color: #102c3a;
+  --soroh-main-color: #fff;
+  --soroh-bg-color: #223634;
+}

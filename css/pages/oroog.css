@@ -1,0 +1,209 @@
+header {
+  background-color: var(--oroog-bg-color);
+}
+
+header .logo {
+  background-image: url(/images/oroog-logo.png);
+  height: 130px;
+}
+
+main {
+  background: var(--oroog-bg-color);
+}
+
+.hero {
+  color: var(--text-light);
+}
+
+.hero-content {
+  margin: 0 auto;
+  animation: fadeIn 1s ease-out;
+  margin-bottom: 2.5rem;
+  padding: 0 2rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.hero h1, h2 {
+  color: var(--oroog-main-color);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content .slugan {
+  font-size: 1.2rem;
+  font-style: italic;
+  position: relative;
+  padding: 1.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-right: 5px solid var(--merqah-main-color);
+  border-radius: 8px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content .slugan::before {
+  content: "”";
+  top: -10px;
+  right: 15px;
+}
+
+.hero-content .slugan::after {
+  content: "“";
+  left: -5px;
+}
+
+.hero-content .slugan::before, .hero-content .slugan::after {
+  font-size: 5rem;
+  position: absolute;
+  color: var(--merqah-main-color);
+  opacity: 0.7;
+}
+
+.hero-content h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.hero-content p, 
+.hero-content ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hero-content ul {
+  padding-right: 0.5rem;
+  list-style: none;
+}
+
+.hero-content ul li {
+  position: relative;
+}
+
+.cta-btn {
+  display: block;
+  max-width: 270px;
+  background: var(--safwa-main-color);
+  color: var(--text-light);
+  padding: 1rem 2rem;
+  margin: 2rem auto 1rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(244, 180, 0, 0.4);
+  text-align: center;
+}
+
+.cta-btn:hover {
+  background: #d49a00;
+  box-shadow: 0 10px 25px rgba(244, 180, 0, 0.6);
+  transform: translateY(-3px);
+}
+
+.baramij {
+  padding: 3rem 1.5rem;
+  background-color: var(--text-light);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--oroog-bg-color);
+  margin-bottom: 2rem;
+  border: 1px solid var(--oroog-bg-color);
+  display: inline-block;
+  padding: 0 2rem;
+  border-radius: 5px;
+}
+
+.baramij-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.bernamij-card {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  height: 150px;
+  position: relative;
+}
+
+.bernamij-card img {
+  max-width: 100px;
+  height: 100px;
+}
+
+.bernamij-card h3 {
+  font-size: 1.5rem;
+  color: var(--oroog-bg-color);
+}
+
+.bernamij-card p {
+  margin-top: 1.5rem;
+  text-align: justify;
+}
+
+.contact-section {
+  color: var(--text-light);
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.contact-section-title {
+  color: var(--text-light);
+  border: 1px solid var(--text-light);
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin: 2rem auto 1rem;
+  line-height: 1.6;
+}
+
+.contact-section .cta-btn {
+  margin: auto;
+  max-width: 210px;
+  font-size: 1rem;
+}
+.contact-section .cta-btn:hover {
+  background: #d49a00;
+  box-shadow: 0 12px 28px rgba(244, 180, 0, 0.6);
+  transform: translateY(-3px);
+}
+
+@media (min-width: 768px) {
+  .slugan br {
+    display: none;
+  }
+  .hero-content {
+    max-width: 700px;
+    padding: 0 3rem;
+  }
+  .hero-content ul {
+    display: inline-block;
+    margin: auto;
+  }
+  .baramij-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

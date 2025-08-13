@@ -1,0 +1,93 @@
+header {
+  background-color: var(--safwa-bg-color);
+}
+
+header .main-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  background: url(/images/safwa-logo.png) no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.main-nav {
+  position: relative;
+  z-index: 999;
+}
+
+.nav-container {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.menu-toggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+}
+.menu-toggle.active {
+  position: fixed;
+}
+
+
+.menu-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 70%;
+  max-width: 300px;
+  background: #222;
+  list-style: none;
+  padding: 2rem 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transform: translateX(-100%);
+}
+
+.menu-list li a {
+  text-decoration: none;
+  padding: 0 1rem;
+  display: block;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+}
+
+.menu-list.open {
+  transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  .menu-list {
+    position: static;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    transform: none;
+    transition: none;
+    background: none;
+    max-width: none;
+    gap: 1rem;
+    background-color: transparent;
+  }
+}

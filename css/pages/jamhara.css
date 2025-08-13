@@ -1,0 +1,137 @@
+
+header {
+  background-color: var(--jamhara-bg-color1);
+}
+
+header .logo {
+  background-image: url(/images/jamhara-logo.png);
+  width: 140px;
+}
+
+main {
+  background: linear-gradient(to bottom, var(--jamhara-bg-color1), var(--jamhara-bg-color2));
+}
+
+.hero {
+  color: var(--text-light);
+}
+
+.hero-content {
+  margin: 0 auto;
+  animation: fadeIn 1s ease-out;
+  padding: 0 2rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.hero h1, h2 {
+  color: var(--jamhara-main-color);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content .slugan {
+  font-size: 1.1rem;
+  font-style: italic;
+  position: relative;
+  padding: 1.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-right: 5px solid var(--jamhara-main-color);
+  border-radius: 8px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content .slugan::before {
+  content: "”";
+  top: -10px;
+  right: 15px;
+}
+
+.hero-content .slugan::after {
+  content: "“";
+  left: -5px;
+}
+
+.hero-content .slugan::before, .hero-content .slugan::after {
+  font-size: 5rem;
+  position: absolute;
+  color: var(--jamhara-main-color);
+  opacity: 0.7;
+}
+
+.hero-content h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.hero-content p, 
+.hero-content ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hero-content ul {
+  padding-right: 0.5rem;
+  list-style: none;
+}
+
+.hero-content ul li {
+  position: relative;
+}
+
+.cta-btn {
+  display: block;
+  max-width: 270px;
+  background: var(--safwa-main-color);
+  color: var(--text-light);
+  padding: 1rem 2rem;
+  margin: 2rem auto 1rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(244, 180, 0, 0.4);
+  text-align: center;
+}
+
+.cta-btn:hover {
+  background: #d49a00;
+  box-shadow: 0 10px 25px rgba(244, 180, 0, 0.6);
+  transform: translateY(-3px);
+}
+
+.contact-section {
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.contact-section p {
+  color: var(--text-light);
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .slugan br {
+    display: none;
+  }
+  .hero-content {
+    max-width: 700px;
+    padding: 0 3rem;
+  }
+  .hero-content ul {
+    display: inline-block;
+    margin: auto;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
